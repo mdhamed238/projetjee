@@ -1,17 +1,16 @@
 package com.example.projetjee.models;
 
 
-public class Admin implements User {
 
+public class Director implements User {
     private String username;
     private String password;
-    private Role role = Role.ADMIN;
+    private Role role = Role.DIRECTOR;
 
-    public Admin(String username, String password) {
+    public Director(String username, String password) {
         this.username = username;
         this.password = password;
     }
-
 
     public String getUsername() {
         return username;
